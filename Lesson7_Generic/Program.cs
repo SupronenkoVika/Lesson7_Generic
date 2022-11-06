@@ -1,6 +1,6 @@
 ﻿
 using Lesson7_Generic;
 
-Pair<int, string> pair = new Pair<int, string>(1, "Vika");
-Console.Write(pair.ID + "  ");
+Pair<string, int> pair = new Pair<string, int>("Vika", 1);
+Console.Write(pair.Number + "  ");
 Console.WriteLine(pair.Name);

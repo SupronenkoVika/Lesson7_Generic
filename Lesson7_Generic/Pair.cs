@@ -1,14 +1,22 @@
 ﻿namespace Lesson7_Generic
 {
-    internal class Pair<T, S>
+    public class Pair<S, T>
     {
-        public T ID { get; set; }
-        public S Name { get; set; }
+        private S name;
+        private T number;
 
-        public Pair(T id, S name)
+        public Pair(S name, T number)
         {
-            ID = id;
-            Name = name;
+            this.name = name;
+            this.number = number;
+        }
+        public S Name
+        {
+            get { return name; }
+        }
+        public T Number
+        {
+            get { return number; }
         }
     }
 }
